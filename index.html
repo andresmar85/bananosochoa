@@ -1,18 +1,20 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>Bananos Ochoa</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#222}
-header{background:#0c7a3f;color:#fff;padding:20px;text-align:center}
-section{padding:50px 20px;max-width:1100px;margin:auto}
-.hero{text-align:center}
-.hero img{max-width:300px}
-.btn{display:inline-block;background:#0c7a3f;color:#fff;padding:12px 25px;border-radius:30px;text-decoration:none}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-footer{background:#111;color:#fff;text-align:center;padding:20px}
+body{margin:0;font-family:'Poppins',sans-serif;background:#f4f6f5;color:#222}
+header{background:linear-gradient(120deg,#0c7a3f,#2ecc71);color:#fff;padding:60px 20px;text-align:center}
+header h1{font-size:48px;margin:0}
+header p{font-size:20px}
+section{padding:70px 20px;max-width:1200px;margin:auto}
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center;gap:40px}
+.card{background:#fff;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,0.1);padding:30px}
+.card img{width:100%;border-radius:15px}
+footer{background:#111;color:#fff;text-align:center;padding:25px;font-size:14px}
 </style>
 </head>
 <body>
@@ -20,32 +22,31 @@ footer{background:#111;color:#fff;text-align:center;padding:20px}
 <h1>BANANOS OCHOA</h1>
 <p>La calidad es nuestro compromiso</p>
 </header>
-
 <section class="hero">
-<img src="logo.png" alt="Logo Bananos Ochoa">
-<p>Producción y comercialización de banano verde premium desde Malambo, Atlántico.</p>
-</section>
-
-<section>
-<h2>Nuestro Producto</h2>
-<div class="grid">
 <div>
-<img src="banano.png" style="width:100%">
-<p>Banano verde premium</p>
-<p>Presentaciones: Caja y Racimo</p>
+<h2>Banano verde premium</h2>
+<p>Producción y comercialización de banano verde seleccionado, cultivado en Malambo, Atlántico – Colombia.</p>
+<ul>
+<li>✔ Selección manual</li>
+<li>✔ Cosecha fresca</li>
+<li>✔ Presentación en cajas y racimos</li>
+</ul>
+<p><b>Contacto:</b> gerencia@bananosochoa.com</p>
 </div>
+<div class="card">
+<img src="banano.png">
 </div>
 </section>
-
 <section>
-<h2>Contacto</h2>
-<p>Pedidos y contacto:</p>
-<p><b>gerencia@bananosochoa.com</b></p>
-<p>Malambo, Atlántico – Colombia</p>
+<h2>Sobre nosotros</h2>
+<div class="card">
+<p>Bananos Ochoa es una empresa ubicada en Malambo, Atlántico dedicada al cultivo y comercialización de banano verde premium, con compromiso, responsabilidad y calidad en cada cosecha.</p>
+<img src="logo.png" style="max-width:220px;margin-top:20px">
+</div>
 </section>
-
 <footer>
-<p>© 2026 Bananos Ochoa</p>
+<p>© 2026 Bananos Ochoa · Malambo, Atlántico, Colombia</p>
 </footer>
 </body>
 </html>
+
