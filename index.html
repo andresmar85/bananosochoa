@@ -2,70 +2,85 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Bananos Ochoa | Guineo Verde Premium</title>
+<title>Bananos Ochoa | Premium Distribution</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Inter,sans-serif;background:#0c1f17;color:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,sans-serif;background:#07140f;color:#fff}
 h1,h2{font-family:'Playfair Display',serif}
-.hero{height:100vh;display:flex;align-items:center;justify-content:center;background:url('60244928_803.jpg') center/cover}
-.overlay{background:linear-gradient(to bottom,rgba(0,0,0,.6),rgba(0,0,0,.9));position:absolute;inset:0}
-.hero-content{position:relative;text-align:center;max-width:900px;padding:20px}
-.hero-content img{max-width:360px}
-.hero-content h1{font-size:78px;margin:20px 0}
-.hero-content p{font-size:24px;color:#d9ffe8}
+.fade{opacity:0;transform:translateY(40px);transition:1s}
+.fade.show{opacity:1;transform:none}
 
-.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;padding:140px 12vw}
-.split img{width:100%;border-radius:30px}
-.light{background:#f4fff9;color:#103c28}
-.light h2{color:#103c28}
+.hero{height:100vh;background:url('60244928_803.jpg') center/cover;display:flex;align-items:center;justify-content:center;position:relative}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9))}
+.hero-content{position:relative;text-align:center;max-width:900px}
+.hero-content img{max-width:360px;animation:float 5s infinite}
+.hero-content h1{font-size:80px;margin:20px 0}
+.hero-content p{font-size:24px;color:#caffdd}
+
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center;padding:140px 12vw}
+.split img{width:100%;border-radius:32px}
+.light{background:#f1fff7;color:#0a3524}
+.light h2{color:#0a3524}
 
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
-.gallery img{width:100%;height:380px;object-fit:cover}
+.gallery img{width:100%;height:380px;object-fit:cover;filter:brightness(.9);transition:.7s}
+.gallery img:hover{filter:brightness(1.1)}
 
-footer{text-align:center;padding:120px 20px;background:#08150f}
+footer{text-align:center;padding:120px 20px;background:#030a07}
 </style>
 </head>
 <body>
 
 <section class="hero">
-<div class="overlay"></div>
-<div class="hero-content">
+<div class="hero-content fade">
 <img src="logo.png">
 <h1>LA CALIDAD ES NUESTRO COMPROMISO</h1>
 <p>Distribución profesional de guineo verde premium colombiano</p>
 </div>
 </section>
 
-<section class="split light">
+<section class="split light fade">
 <div>
 <h2>Quiénes Somos</h2>
-<p>Somos una empresa colombiana dedicada a la distribución de guineo verde premium. Trabajamos con productores aliados y procesos de selección que garantizan uniformidad, frescura y confianza comercial.</p>
+<p>Empresa colombiana especializada en distribución de guineo verde premium con estándares de calidad, trazabilidad y logística comercial.</p>
 </div>
 <img src="palmera-con-platanos-verdes.jpg">
 </section>
 
-<section class="split">
+<section class="split fade">
 <img src="hombre-trabajando-planta_1048944-13469883.jpg">
 <div>
 <h2>Nuestro Producto</h2>
-<p>Guineo verde firme, limpio, homogéneo y con excelente desempeño gastronómico.</p>
+<p>Guineo verde homogéneo, firme, limpio y con excelente rendimiento gastronómico.</p>
 </div>
 </section>
 
-<section class="gallery">
+<section class="gallery fade">
 <img src="60244928_803.jpg">
 <img src="grenn-platanos-en-una-palma-cultivo-de-frutas-en-las-plantaciones-de-la-isla-de-tenerife-platano-inmaduro-joven-con-una-palma-deja-en-poca-profundidad-de-campo-de-cerca.jpg">
 <img src="palmera-con-platanos-verdes.jpg">
 <img src="hombre-trabajando-planta_1048944-13469883.jpg">
 </section>
 
-<footer>
+<footer class="fade">
 <h2>Bananos Ochoa</h2>
 <p>Guineo verde premium colombiano</p>
 <p>Malambo, Atlántico</p>
 <p>gerencia@bananosochoa.com</p>
 </footer>
+
+<script>
+const f=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>f.forEach(e=>{
+const p=e.getBoundingClientRect().top;
+if(p<window.innerHeight-100)e.classList.add('show');
+}));
+</script>
 
 </body>
 </html>
