@@ -4,56 +4,60 @@
 <meta charset="UTF-8">
 <title>Bananos Ochoa | Guineo Verde Premium</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Montserrat,sans-serif;background:#f6fbf8;color:#15392d}
+body{margin:0;font-family:Inter,sans-serif;background:#0c1f17;color:#fff}
 h1,h2{font-family:'Playfair Display',serif}
-.hero{background:url('60244928_803.jpg') center/cover no-repeat;height:100vh;position:relative}
-.hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.55)}
-.hero-content{position:relative;z-index:2;color:#fff;text-align:center;top:50%;transform:translateY(-50%)}
-.hero-content img{max-width:300px}
-.hero-content h1{font-size:72px;margin:25px 0}
-.hero-content p{font-size:26px;max-width:850px;margin:auto}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;background:url('60244928_803.jpg') center/cover}
+.overlay{background:linear-gradient(to bottom,rgba(0,0,0,.6),rgba(0,0,0,.9));position:absolute;inset:0}
+.hero-content{position:relative;text-align:center;max-width:900px;padding:20px}
+.hero-content img{max-width:360px}
+.hero-content h1{font-size:78px;margin:20px 0}
+.hero-content p{font-size:24px;color:#d9ffe8}
 
-section{max-width:1200px;margin:auto;padding:100px 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
-.card{background:#fff;border-radius:28px;padding:40px;box-shadow:0 20px 45px rgba(0,0,0,.08)}
-.gallery img{width:100%;border-radius:28px}
-footer{background:#0b2b1d;color:#fff;text-align:center;padding:80px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;padding:140px 12vw}
+.split img{width:100%;border-radius:30px}
+.light{background:#f4fff9;color:#103c28}
+.light h2{color:#103c28}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.gallery img{width:100%;height:380px;object-fit:cover}
+
+footer{text-align:center;padding:120px 20px;background:#08150f}
 </style>
 </head>
 <body>
 
-<div class="hero">
+<section class="hero">
+<div class="overlay"></div>
 <div class="hero-content">
 <img src="logo.png">
 <h1>LA CALIDAD ES NUESTRO COMPROMISO</h1>
-<p>Distribución de guineo verde premium seleccionado bajo estándares empresariales.</p>
-</div>
-</div>
-
-<section class="grid">
-<div class="card">
-<h2>Quiénes Somos</h2>
-<p>Empresa colombiana especializada en distribución de guineo verde premium, con procesos de selección manual, trazabilidad y logística comercial.</p>
-</div>
-
-<div class="card">
-<h2>Nuestro Producto</h2>
-<p>Guineo verde de alta firmeza, tamaño uniforme y excelente desempeño en cocina comercial.</p>
-</div>
-
-<div class="card">
-<h2>Beneficios</h2>
-<p>Rico en potasio, energía natural, fibra y base fundamental de la gastronomía colombiana.</p>
+<p>Distribución profesional de guineo verde premium colombiano</p>
 </div>
 </section>
 
-<section class="gallery grid">
+<section class="split light">
+<div>
+<h2>Quiénes Somos</h2>
+<p>Somos una empresa colombiana dedicada a la distribución de guineo verde premium. Trabajamos con productores aliados y procesos de selección que garantizan uniformidad, frescura y confianza comercial.</p>
+</div>
+<img src="palmera-con-platanos-verdes.jpg">
+</section>
+
+<section class="split">
+<img src="hombre-trabajando-planta_1048944-13469883.jpg">
+<div>
+<h2>Nuestro Producto</h2>
+<p>Guineo verde firme, limpio, homogéneo y con excelente desempeño gastronómico.</p>
+</div>
+</section>
+
+<section class="gallery">
 <img src="60244928_803.jpg">
+<img src="grenn-platanos-en-una-palma-cultivo-de-frutas-en-las-plantaciones-de-la-isla-de-tenerife-platano-inmaduro-joven-con-una-palma-deja-en-poca-profundidad-de-campo-de-cerca.jpg">
 <img src="palmera-con-platanos-verdes.jpg">
 <img src="hombre-trabajando-planta_1048944-13469883.jpg">
-<img src="grenn-platanos-en-una-palma-cultivo-de-frutas-en-las-plantaciones-de-la-isla-de-tenerife-platano-inmaduro-joven-con-una-palma-deja-en-poca-profundidad-de-campo-de-cerca.jpg">
 </section>
 
 <footer>
