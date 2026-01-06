@@ -2,21 +2,33 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Bananos Ochoa</title>
+<title>Bananos Ochoa | Export Quality</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Poppins;background:#f5f7f6;color:#333}
-section{padding:90px 8%;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:50px;align-items:center}
-h1,h2{color:#1a472a}
-.hero{padding:0}
-.hero img{width:100%;height:100vh;object-fit:cover}
-.block img{width:100%;border-radius:22px;box-shadow:0 20px 40px rgba(0,0,0,.2)}
-ul{line-height:1.8}
-.fade{opacity:0;transform:translateY(40px);transition:.9s}
-.fade.visible{opacity:1;transform:none}
-footer{text-align:center;padding:70px;background:#0f2e1c;color:white}
+:root{
+--green:#0f3d2e;
+--light:#f4f7f6;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter;background:white;color:#333}
+.hero{height:100vh;overflow:hidden}
+.hero img{width:100%;height:100%;object-fit:cover;animation:zoom 18s infinite alternate}
+@keyframes zoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+
+.section{padding:120px 10%;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:70px;align-items:center}
+.section img{width:100%;border-radius:32px;box-shadow:0 40px 70px rgba(0,0,0,.25)}
+
+.tag{color:#5fb07c;font-weight:600;text-transform:uppercase;letter-spacing:3px}
+h2{font-size:40px;color:var(--green)}
+ul{line-height:1.9}
+
+.fade{opacity:0;transform:translateY(60px);transition:1.1s}
+.fade.show{opacity:1;transform:none}
+
+footer{background:var(--green);color:white;text-align:center;padding:90px}
 footer img{max-width:260px}
 </style>
 </head>
@@ -28,56 +40,54 @@ footer img{max-width:260px}
 <img src="PORTADA.png">
 </div>
 
-<!-- BLOQUE 1 -->
-<section class="block fade">
+<!-- SECTION 1 -->
+<section class="section fade">
 <div>
+<div class="tag">BANANOS OCHOA</div>
 <h2>Distribución Premium de Banano Verde</h2>
-<p>En Bananos Ochoa distribuimos banano verde de alta calidad cumpliendo estrictos procesos de selección, conservación y logística para garantizar frescura, uniformidad y excelente presentación.</p>
+<p>Operamos un modelo de distribución que garantiza frescura, uniformidad y conservación óptima desde el origen hasta el cliente final.</p>
 </div>
 <img src="BNOCHOA 1.png">
 </section>
 
-<!-- BLOQUE 2 -->
-<section class="block fade">
+<!-- SECTION 2 -->
+<section class="section fade">
 <img src="BNOCHOA 2.png">
 <div>
-<h2>Beneficios del Banano</h2>
+<h2>Beneficios Nutricionales</h2>
 <ul>
 <li>Fuente natural de energía</li>
-<li>Rico en potasio y vitaminas B6 y C</li>
-<li>Favorece la digestión y la presión arterial</li>
-<li>Apoya el sistema nervioso</li>
-<li>Ideal para deportistas y el día a día</li>
-<li>Contribuye al buen estado de ánimo</li>
+<li>Rico en potasio</li>
+<li>Apoya la digestión</li>
+<li>Mejora el sistema nervioso</li>
+<li>Ideal para deportistas</li>
 </ul>
 </div>
 </section>
 
-<!-- BLOQUE 3 -->
-<section class="block fade">
+<!-- SECTION 3 -->
+<section class="section fade">
 <div>
 <h2>Calidad en Producción</h2>
 <ul>
-<li>Selección cuidadosa</li>
 <li>Buenas prácticas agrícolas</li>
-<li>Control de cultivo y cosecha</li>
-<li>Fruta uniforme y fresca</li>
+<li>Control de cosecha</li>
+<li>Fruta fresca y uniforme</li>
 <li>Cuidado ambiental</li>
 </ul>
 </div>
 <img src="CARGA.png">
 </section>
 
-<!-- BLOQUE 4 -->
-<section class="block fade">
+<!-- SECTION 4 -->
+<section class="section fade">
 <img src="hombre-trabajando-planta_1048944-13469883.jpg">
 <div>
 <h2>Modelo Logístico</h2>
 <ul>
-<li>Procesos logísticos certificados</li>
-<li>Control de temperatura</li>
+<li>Cadena de frío</li>
 <li>Empaque seguro</li>
-<li>Transporte y descarga cuidadosa</li>
+<li>Transporte certificado</li>
 <li>Trazabilidad completa</li>
 </ul>
 </div>
@@ -86,13 +96,13 @@ footer img{max-width:260px}
 <!-- FOOTER -->
 <footer>
 <p><strong>Malambo – Atlántico – Colombia</strong><br>
-📧 gerencia@bananosochoa.com</p>
+gerencia@bananosochoa.com</p>
 <img src="logo.png">
 </footer>
 
 <script>
 const obs=new IntersectionObserver(e=>{
-e.forEach(i=>i.isIntersecting&&i.target.classList.add("visible"))
+e.forEach(i=>i.isIntersecting&&i.target.classList.add("show"))
 },{threshold:.2});
 document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
 </script>
