@@ -4,73 +4,62 @@
 <meta charset="UTF-8">
 <title>Bananos Ochoa | Guineo Verde Premium</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f6fff8;color:#124734}
-.hero{height:100vh;background:url("60244928_803.jpg") center/cover no-repeat;display:flex;align-items:center}
-.hero-box{background:rgba(18,71,52,.85);padding:60px;border-radius:14px;color:white;margin-left:10%}
-.hero h1{font-size:48px;margin:0}
-.hero p{font-size:20px}
-.btn{display:inline-block;background:#8aff00;color:#124734;padding:15px 35px;border-radius:30px;text-decoration:none;font-weight:bold}
-.section{padding:100px 10%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.section img{width:100%;border-radius:20px}
-.section h2{color:#1a7f4b;font-size:38px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px}
-.card{background:white;padding:25px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-footer{text-align:center;padding:60px;background:#124734;color:white}
+body{margin:0;font-family:Montserrat,sans-serif;background:#f6fbf8;color:#15392d}
+h1,h2{font-family:'Playfair Display',serif}
+.hero{background:url('60244928_803.jpg') center/cover no-repeat;height:100vh;position:relative}
+.hero::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.55)}
+.hero-content{position:relative;z-index:2;color:#fff;text-align:center;top:50%;transform:translateY(-50%)}
+.hero-content img{max-width:300px}
+.hero-content h1{font-size:72px;margin:25px 0}
+.hero-content p{font-size:26px;max-width:850px;margin:auto}
+
+section{max-width:1200px;margin:auto;padding:100px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
+.card{background:#fff;border-radius:28px;padding:40px;box-shadow:0 20px 45px rgba(0,0,0,.08)}
+.gallery img{width:100%;border-radius:28px}
+footer{background:#0b2b1d;color:#fff;text-align:center;padding:80px}
 </style>
 </head>
 <body>
 
 <div class="hero">
-<div class="hero-box">
-<img src="logo.png" style="max-width:180px;margin-bottom:20px">
-<h1>BANANOS OCHOA</h1>
-<p><strong>La calidad es nuestro compromiso</strong></p>
-<p>Distribución de guineo verde premium cuidadosamente seleccionado.</p>
-<a class="btn" href="mailto:gerencia@bananosochoa.com">Solicitar información</a>
+<div class="hero-content">
+<img src="logo.png">
+<h1>LA CALIDAD ES NUESTRO COMPROMISO</h1>
+<p>Distribución de guineo verde premium seleccionado bajo estándares empresariales.</p>
 </div>
 </div>
 
-<div class="section">
-<img src="palmera-con-platanos-verdes.jpg">
-<div>
-<h2>Distribuidores de guineo verde premium</h2>
-<p>Somos una empresa colombiana dedicada a la distribución de guineo verde de alta calidad, trabajando con productores aliados y aplicando procesos de selección y control que garantizan un producto uniforme, fresco y confiable.</p>
-</div>
+<section class="grid">
+<div class="card">
+<h2>Quiénes Somos</h2>
+<p>Empresa colombiana especializada en distribución de guineo verde premium, con procesos de selección manual, trazabilidad y logística comercial.</p>
 </div>
 
-<div class="section">
-<div>
+<div class="card">
 <h2>Nuestro Producto</h2>
-<div class="cards">
-<div class="card">Selección manual</div>
-<div class="card">Pulpa firme</div>
-<div class="card">Corte fresco</div>
-<div class="card">Excelente rendimiento en cocina</div>
-<div class="card">Tamaño uniforme</div>
-</div>
-</div>
-<img src="hombre-trabajando-planta_1048944-13469883.jpg">
+<p>Guineo verde de alta firmeza, tamaño uniforme y excelente desempeño en cocina comercial.</p>
 </div>
 
-<div class="section">
+<div class="card">
+<h2>Beneficios</h2>
+<p>Rico en potasio, energía natural, fibra y base fundamental de la gastronomía colombiana.</p>
+</div>
+</section>
+
+<section class="gallery grid">
+<img src="60244928_803.jpg">
+<img src="palmera-con-platanos-verdes.jpg">
+<img src="hombre-trabajando-planta_1048944-13469883.jpg">
 <img src="grenn-platanos-en-una-palma-cultivo-de-frutas-en-las-plantaciones-de-la-isla-de-tenerife-platano-inmaduro-joven-con-una-palma-deja-en-poca-profundidad-de-campo-de-cerca.jpg">
-<div>
-<h2>Beneficios del guineo verde</h2>
-<div class="cards">
-<div class="card">Alto en potasio</div>
-<div class="card">Fuente natural de energía</div>
-<div class="card">Rico en fibra</div>
-<div class="card">Ideal para fritos y sancochos</div>
-<div class="card">Producto 100% natural</div>
-</div>
-</div>
-</div>
+</section>
 
 <footer>
 <h2>Bananos Ochoa</h2>
 <p>Guineo verde premium colombiano</p>
-<p>Malambo, Atlántico – Colombia</p>
+<p>Malambo, Atlántico</p>
 <p>gerencia@bananosochoa.com</p>
 </footer>
 
