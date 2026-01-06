@@ -8,141 +8,95 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#0f2d1e;color:white;overflow-x:hidden;}
-
-header{
-    height:100vh;
-    background:url("PORTADA.png") center/cover no-repeat;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-header img{
-    width:260px;
-    animation:zoom 2s ease;
-}
-
-@keyframes zoom{
-    from{transform:scale(.6);opacity:0}
-    to{transform:scale(1);opacity:1}
-}
-
-section{
-    padding:100px 10%;
-}
-
-h2{
-    text-align:center;
-    color:#7CFF88;
-    margin-bottom:50px;
-    font-size:42px;
-}
-
-.slogan{
-    text-align:center;
-    font-size:30px;
-    color:#fff;
-    margin-bottom:40px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:#143d2a;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.4);
-    transition:.5s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-}
-
-.card div{
-    padding:25px;
-}
-
-.card h3{
-    color:#7CFF88;
-    margin-bottom:10px;
-}
-
-.footer{
-    background:#07170f;
-    padding:50px;
-    text-align:center;
-}
-.footer p{opacity:.7}
+body{background:#0a2015;color:white;overflow-x:hidden;}
+header{height:100vh;background:url("PORTADA.png") center/cover no-repeat;}
+section{padding:110px 10%;}
+h2{text-align:center;color:#7CFF88;font-size:44px;margin-bottom:50px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:35px;}
+.card{background:#133b28;border-radius:25px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.5);transition:.6s;}
+.card:hover{transform:translateY(-15px);}
+.card img{width:100%;height:280px;object-fit:cover;}
+.card div{padding:25px;}
+.footer{background:#06110b;text-align:center;padding:80px 20px;}
+.footer img{width:240px;margin-bottom:20px;}
+ul{line-height:2;font-size:17px;opacity:.9;}
+.fade{animation:fadeIn 1.3s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(40px);}to{opacity:1;transform:translateY(0);}}
 </style>
 </head>
 
 <body>
 
-<header>
-    <img src="logo.png">
-</header>
+<header></header>
 
-<section>
-    <div class="slogan">LA CALIDAD ES NUESTRO COMPROMISO</div>
-
-    <p style="text-align:center;max-width:900px;margin:auto;line-height:1.8;font-size:18px;opacity:.9">
-        Bananos Ochoa es una empresa distribuidora dedicada a llevar guineo verde fresco y seleccionado
-        a mercados, tiendas y hogares del Caribe colombiano. No cultivamos: **seleccionamos, cuidamos y distribuimos calidad.**
-    </p>
+<section class="fade">
+<h2>LA CALIDAD ES NUESTRO COMPROMISO</h2>
+<p style="max-width:900px;margin:auto;text-align:center;line-height:1.9;font-size:18px;opacity:.9">
+Bananos Ochoa es una empresa distribuidora especializada en guineo verde premium, abasteciendo comercios,
+plazas de mercado y clientes institucionales con producto uniforme, fresco y de alta rotación.
+</p>
 </section>
 
 <section>
-    <h2>Nuestro Producto</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="BNOCHOA 1.png">
-            <div>
-                <h3>Guineo Verde Premium</h3>
-                <p>Selección manual, calibre uniforme y frescura garantizada.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="BNOCHOA 2.png">
-            <div>
-                <h3>Calidad Comercial</h3>
-                <p>Ideal para tiendas, plazas de mercado y distribuidores.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="CARGA.png">
-            <div>
-                <h3>Distribución Directa</h3>
-                <p>Entregas constantes y abastecimiento seguro.</p>
-            </div>
-        </div>
-    </div>
+<h2>Beneficios del Consumo del Banano</h2>
+<ul style="max-width:800px;margin:auto">
+<li>Fuente natural de energía</li>
+<li>Rico en potasio, protege corazón y músculos</li>
+<li>Favorece la digestión</li>
+<li>Contribuye al sistema nervioso</li>
+<li>Regula la presión arterial</li>
+<li>Aporta vitaminas B6 y C</li>
+<li>Ideal para deportistas y consumo diario</li>
+<li>Apoya el buen estado de ánimo</li>
+</ul>
 </section>
 
 <section>
-    <h2>Compromiso Ochoa</h2>
-    <p style="text-align:center;max-width:900px;margin:auto;line-height:1.8;font-size:18px;opacity:.9">
-        Cada racimo que entregamos representa responsabilidad, cumplimiento y frescura.
-        Somos un aliado comercial que protege su negocio y garantiza su abastecimiento.
-    </p>
+<h2>Calidad en la Producción</h2>
+<ul style="max-width:900px;margin:auto">
+<li>Selección cuidadosa desde la siembra</li>
+<li>Manejo agrícola responsable</li>
+<li>Procesos controlados de cultivo y cosecha</li>
+<li>Estándares de calidad certificados</li>
+<li>Fruta fresca, uniforme y excelente presentación</li>
+<li>Buenas prácticas ambientales</li>
+<li>Control en empaque y transporte</li>
+<li>Compromiso con la satisfacción del cliente</li>
+</ul>
+</section>
+
+<section>
+<h2>Modelo de Distribución</h2>
+<ul style="max-width:900px;margin:auto">
+<li>Procesos logísticos que protegen el producto</li>
+<li>Empaque adecuado</li>
+<li>Control de temperatura y ventilación</li>
+<li>Manejo cuidadoso de carga y descarga</li>
+<li>Trazabilidad continua</li>
+<li>Cumplimiento de normas sanitarias</li>
+<li>Excelente conservación</li>
+<li>Garantía de banano fresco y seguro</li>
+</ul>
+</section>
+
+<section>
+<h2>Nuestra Operación</h2>
+<div class="grid">
+<div class="card"><img src="BNOCHOA 1.png"></div>
+<div class="card"><img src="BNOCHOA 2.png"></div>
+<div class="card"><img src="CARGA.png"></div>
+<div class="card"><img src="60244928_803.jpg"></div>
+<div class="card"><img src="palmera-con-platanos-verdes.jpg"></div>
+<div class="card"><img src="hombre-trabajando-planta_1048944-13469883.jpg"></div>
+<div class="card"><img src="grenn-platanos-en-una-palma-cultivo-de-frutas-en-las-plantaciones-de-la-isla-de-tenerife-platano-inmaduro-joven-con-una-palma-deja-en-poca-profundidad-de-campo-de-cerca.jpg"></div>
+</div>
 </section>
 
 <div class="footer">
-    <p>📍 Barranquilla - Atlántico | 📧 gerencia@bananosochoa.com</p>
-    <p>© 2026 BANANOS OCHOA</p>
+<img src="logo.png">
+<p>Barranquilla - Atlántico</p>
+<p>gerencia@bananosochoa.com</p>
+<p>© 2026 BANANOS OCHOA</p>
 </div>
 
 </body>
