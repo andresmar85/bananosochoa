@@ -2,102 +2,100 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bananos Ochoa</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#0a2015;color:white;overflow-x:hidden;}
-header{height:100vh;background:url("PORTADA.png") center/cover no-repeat;}
-section{padding:110px 10%;}
-h2{text-align:center;color:#7CFF88;font-size:44px;margin-bottom:50px;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:35px;}
-.card{background:#133b28;border-radius:25px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.5);transition:.6s;}
-.card:hover{transform:translateY(-15px);}
-.card img{width:100%;height:280px;object-fit:cover;}
-.card div{padding:25px;}
-.footer{background:#06110b;text-align:center;padding:80px 20px;}
-.footer img{width:240px;margin-bottom:20px;}
-ul{line-height:2;font-size:17px;opacity:.9;}
-.fade{animation:fadeIn 1.3s ease;}
-@keyframes fadeIn{from{opacity:0;transform:translateY(40px);}to{opacity:1;transform:translateY(0);}}
+body{margin:0;font-family:Poppins;background:#f5f7f6;color:#333}
+section{padding:90px 8%;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:50px;align-items:center}
+h1,h2{color:#1a472a}
+.hero{padding:0}
+.hero img{width:100%;height:100vh;object-fit:cover}
+.block img{width:100%;border-radius:22px;box-shadow:0 20px 40px rgba(0,0,0,.2)}
+ul{line-height:1.8}
+.fade{opacity:0;transform:translateY(40px);transition:.9s}
+.fade.visible{opacity:1;transform:none}
+footer{text-align:center;padding:70px;background:#0f2e1c;color:white}
+footer img{max-width:260px}
 </style>
 </head>
 
 <body>
 
-<header></header>
+<!-- PORTADA -->
+<div class="hero">
+<img src="PORTADA.png">
+</div>
 
-<section class="fade">
-<h2>LA CALIDAD ES NUESTRO COMPROMISO</h2>
-<p style="max-width:900px;margin:auto;text-align:center;line-height:1.9;font-size:18px;opacity:.9">
-Bananos Ochoa es una empresa distribuidora especializada en guineo verde premium, abasteciendo comercios,
-plazas de mercado y clientes institucionales con producto uniforme, fresco y de alta rotación.
-</p>
+<!-- BLOQUE 1 -->
+<section class="block fade">
+<div>
+<h2>Distribución Premium de Banano Verde</h2>
+<p>En Bananos Ochoa distribuimos banano verde de alta calidad cumpliendo estrictos procesos de selección, conservación y logística para garantizar frescura, uniformidad y excelente presentación.</p>
+</div>
+<img src="BNOCHOA 1.png">
 </section>
 
-<section>
-<h2>Beneficios del Consumo del Banano</h2>
-<ul style="max-width:800px;margin:auto">
+<!-- BLOQUE 2 -->
+<section class="block fade">
+<img src="BNOCHOA 2.png">
+<div>
+<h2>Beneficios del Banano</h2>
+<ul>
 <li>Fuente natural de energía</li>
-<li>Rico en potasio, protege corazón y músculos</li>
-<li>Favorece la digestión</li>
-<li>Contribuye al sistema nervioso</li>
-<li>Regula la presión arterial</li>
-<li>Aporta vitaminas B6 y C</li>
-<li>Ideal para deportistas y consumo diario</li>
-<li>Apoya el buen estado de ánimo</li>
+<li>Rico en potasio y vitaminas B6 y C</li>
+<li>Favorece la digestión y la presión arterial</li>
+<li>Apoya el sistema nervioso</li>
+<li>Ideal para deportistas y el día a día</li>
+<li>Contribuye al buen estado de ánimo</li>
 </ul>
-</section>
-
-<section>
-<h2>Calidad en la Producción</h2>
-<ul style="max-width:900px;margin:auto">
-<li>Selección cuidadosa desde la siembra</li>
-<li>Manejo agrícola responsable</li>
-<li>Procesos controlados de cultivo y cosecha</li>
-<li>Estándares de calidad certificados</li>
-<li>Fruta fresca, uniforme y excelente presentación</li>
-<li>Buenas prácticas ambientales</li>
-<li>Control en empaque y transporte</li>
-<li>Compromiso con la satisfacción del cliente</li>
-</ul>
-</section>
-
-<section>
-<h2>Modelo de Distribución</h2>
-<ul style="max-width:900px;margin:auto">
-<li>Procesos logísticos que protegen el producto</li>
-<li>Empaque adecuado</li>
-<li>Control de temperatura y ventilación</li>
-<li>Manejo cuidadoso de carga y descarga</li>
-<li>Trazabilidad continua</li>
-<li>Cumplimiento de normas sanitarias</li>
-<li>Excelente conservación</li>
-<li>Garantía de banano fresco y seguro</li>
-</ul>
-</section>
-
-<section>
-<h2>Nuestra Operación</h2>
-<div class="grid">
-<div class="card"><img src="BNOCHOA 1.png"></div>
-<div class="card"><img src="BNOCHOA 2.png"></div>
-<div class="card"><img src="CARGA.png"></div>
-<div class="card"><img src="60244928_803.jpg"></div>
-<div class="card"><img src="palmera-con-platanos-verdes.jpg"></div>
-<div class="card"><img src="hombre-trabajando-planta_1048944-13469883.jpg"></div>
-<div class="card"><img src="grenn-platanos-en-una-palma-cultivo-de-frutas-en-las-plantaciones-de-la-isla-de-tenerife-platano-inmaduro-joven-con-una-palma-deja-en-poca-profundidad-de-campo-de-cerca.jpg"></div>
 </div>
 </section>
 
-<div class="footer">
+<!-- BLOQUE 3 -->
+<section class="block fade">
+<div>
+<h2>Calidad en Producción</h2>
+<ul>
+<li>Selección cuidadosa</li>
+<li>Buenas prácticas agrícolas</li>
+<li>Control de cultivo y cosecha</li>
+<li>Fruta uniforme y fresca</li>
+<li>Cuidado ambiental</li>
+</ul>
+</div>
+<img src="CARGA.png">
+</section>
+
+<!-- BLOQUE 4 -->
+<section class="block fade">
+<img src="hombre-trabajando-planta_1048944-13469883.jpg">
+<div>
+<h2>Modelo Logístico</h2>
+<ul>
+<li>Procesos logísticos certificados</li>
+<li>Control de temperatura</li>
+<li>Empaque seguro</li>
+<li>Transporte y descarga cuidadosa</li>
+<li>Trazabilidad completa</li>
+</ul>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p><strong>Malambo – Atlántico – Colombia</strong><br>
+📧 gerencia@bananosochoa.com</p>
 <img src="logo.png">
-<p>Barranquilla - Atlántico</p>
-<p>gerencia@bananosochoa.com</p>
-<p>© 2026 BANANOS OCHOA</p>
-</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>{
+e.forEach(i=>i.isIntersecting&&i.target.classList.add("visible"))
+},{threshold:.2});
+document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
+</script>
 
 </body>
 </html>
